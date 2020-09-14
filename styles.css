@@ -166,6 +166,12 @@ i {
     margin-top: 80px;
 }
 
+.product-frame-video {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
 @media(max-width: 400px) {
     .product-landing-page-navbar #productNavbarLinks {
         display: block;
