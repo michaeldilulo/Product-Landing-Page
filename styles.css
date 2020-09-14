@@ -2,11 +2,14 @@ body {
     margin: auto;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    /* background: #2A3132; */
+    /* color: #336B87; */
 }
 
 .product-landing-page-navbar {
     width: 100%;
     overflow: hidden;
+    position: fixed;
     top: 0;
     background: #2A3132;
 }
@@ -88,18 +91,79 @@ input {
     display: flex;
     justify-content: center;
 }
+
 form .btn {
     margin-left: 45px;
     width: 200px;
     height: 30px;
     margin-top: 20px;
+    margin-bottom: 50px;
     background-color: #2A3132;
     color: #90AFC5;
     border-radius: 5px;
 }
+
 form .btn:hover {
     background-color: #90AFC5;
     color: #2A3132
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.top-flex-container {
+    font-size: 40px;
+    margin-right: 80px;
+}
+
+.flex-container .top-flex-container i.fab.fa-facebook-square {
+margin-left: -30px;
+}
+
+.flex-container .top-flex-container i.fab.fa-instagram-square {
+margin-left: -35px;
+}
+
+h2.product-social-media {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+p.product-social-description {
+    margin-top: 0;
+}
+
+.top-flex-container i.fab.fa-facebook-square::before {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.top-flex-container i.fab.fa-twitter-square::before {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.top-flex-container i.fab.fa-instagram-square::before {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.facebook-social-product-media {
+margin-right: 70px;
+}
+
+i {
+    color: #000000;
+}
+
+.product-page-title {
+    margin-top: 80px;
 }
 
 @media(max-width: 400px) {
@@ -134,25 +198,31 @@ form .btn:hover {
         margin-left: 40px;
         margin-bottom: -5px;
     }
+
     .nav-link:nth-child(2) {
         margin-left: 33px;
     }
+
     .nav-link:nth-child(3) {
         margin-left: 33px;
     }
+
     .product-page-title h2 {
         margin-bottom: 0;
     }
+
     .product-page-description {
         padding: 20px;
         margin-left: 20px;
         padding-top: 0;
         margin-top: 0;
     }
+
     .form-input-button {
     display: flex;
     justify-content: center;
 }
+
 form .btn {
     margin-left: 45px;
     width: 200px;
@@ -162,4 +232,46 @@ form .btn {
     color: #90AFC5;
     border-radius: 5px;
 }
+
+.top-flex-container {
+    display: none;
+}
+
+.product-social-media {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+p.product-social-description {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    padding-right: 0;
+    margin-top: 0;
+    margin-left: 16px;
+}
+
+h2.product-social-media:nth-child(1) {
+    margin-top: 10px;
+}
+
+.facebook-social-product-media {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.facebook-social-product-media {
+    margin-right: 4px;
+}
+
+.product-page-title {
+    margin-top: 250px;
+}
+
 }
